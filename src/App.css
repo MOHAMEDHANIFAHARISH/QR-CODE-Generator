@@ -1,38 +1,139 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+body{
+  font-family: sans-serif;
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  text-align: center;
+ 
+  
+}
+.heading{
+  text-align: center;
+ 
+}
+.heading h3{
+  color: rgb(6, 167, 188);
+ 
+  
+  
+}
+.heading p{
+  color: rgb(6, 167, 188);
+}
+.heading img{
+  background-color: rgb(255, 255, 255);
+  padding: 5px;
+  box-shadow: 0px 0px 1px rgb(157, 157, 157);
+
+ 
+}
+.container{
+  text-align: left;
+  font-family: sans-serif;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+
+  
+}
+.data1 label{
+  color: rgb(6, 167, 188);
+  margin:8px 10px;
+font-size: small;
+}
+.data1{
+  padding: 10px 0;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
+.data1 input{
+  padding: 10px 0;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  outline: 1px solid  rgb(6, 167, 188);
+}
+.data1 input:focus{
+  
+  outline: 2px solid  rgb(0, 179, 120);
+}
+.data2 input{
+  padding: 10px 0;
+  width: 100%;
+  height: 30px;
+  border-radius: 5px;
+  border: 0;
+  outline: 1px solid  rgb(6, 167, 188);
+}
+.data2 input:focus{
+  outline:2px solid rgb(0, 179, 120);
+}
+.data2{
+padding: 10px 0;
+display: flex;
+width: 100%;
+flex-direction: column;
+
+}
+.data2 label{
+  color: rgb(6, 167, 188);
+  margin: 8px 10px;
+  font-size: small;
+}
+.button{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.button .but1 {
+ background-color: rgb(0, 179, 120);
+ color: white;
+ border: 2px solid rgb(0, 131, 179);
+ padding: 10px;
+ border-radius: 5px;
+ cursor: pointer;
+}
+.but2{
+  padding: 10px;
+  background-color: rgb(0, 131, 179);
   color: white;
+  border: 2px solid rgb(0, 179, 120);
+  
+  cursor: pointer;
+  border-radius: 5px;
+}
+#desc{
+text-align: center;
+}
+#desc a{
+color: rgb(6, 167, 188);
+text-decoration: none;
+}
+::placeholder{
+  color:rgb(6, 167, 188) ;
+  font-size: x-small;
+ padding-left: 10px;
+}
+.but1:disabled{
+background-color:rgb(100, 186, 158) ;
+cursor: not-allowed;
 }
 
-.App-link {
-  color: #61dafb;
+.but1:hover{
+  background-color: rgb(0, 162, 108);
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.but2:hover{
+  background-color: rgb(0, 100, 136);
 }
