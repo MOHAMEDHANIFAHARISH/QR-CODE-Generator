@@ -36,7 +36,7 @@ function App() {
     <div className='container'>
       <div className='heading'>
       <h3 >QR-Code GENERATOR</h3>
-      {loading && <p id={para}>please wait...</p>}
+      {loading && <p dangerouslySetInnerHTML={para}>please wait...</p>}
       {img && <img src={img}></img>}
       </div >
       <div className='data1'>
