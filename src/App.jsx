@@ -13,7 +13,7 @@ function App() {
       const url=`https://api.qrserver.com/v1/create-qr-code/?size=${size}x${size}&data=${encodeURIComponent(qrdata)}`;
       setimg(url);
     } catch (error) {
-      setpara.innerHTML("error",error);
+      setpara(error);
     }
     finally{
       setloading(false);
@@ -28,7 +28,9 @@ function App() {
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
-      });
+      })
+      .catch ((error)=>{
+        setpara(error)});
     };
   return (
     <div className='container'>
