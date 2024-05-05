@@ -14,6 +14,7 @@ function App() {
       setimg(url);
     } catch (error) {
       setpara(error);
+      console.log(error);
     }
     finally{
       setloading(false);
@@ -30,7 +31,7 @@ function App() {
         document.body.removeChild(link);
       })
       .catch ((error)=>{
-        setpara(error)});
+        setpara(error);console.log(error)});
     };
   return (
     <div className='container'>
